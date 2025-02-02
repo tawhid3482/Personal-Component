@@ -1,16 +1,17 @@
 import { Outlet } from "react-router";
+import Footer from "../Pages/Footer/Footer";
 import Navbar from "../Pages/Navbar/Navbar";
 
 const MainLayout = () => {
-    return (
-        <div className="">
-      <Navbar></Navbar>
-      <div className="dark:bg-slate-300 dark:text-black ">
-        <Outlet></Outlet>
+  return (
+    <div className="min-h-screen bg-gray-100 dark:bg-gray-900">
+      <Navbar />
+      <div className="py-16">
+        <Outlet />
       </div>
-      {/* <Footer></Footer> */}
+      <Footer />
     </div>
-    );
+  );
 };
 
 export default MainLayout;

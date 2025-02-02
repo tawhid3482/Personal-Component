@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   FaGithub,
   FaLinkedin,
@@ -10,19 +10,26 @@ import {
 import TIS from "../../assets/TIS.png";
 
 const Navbar = () => {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(
+    localStorage.getItem("theme") === "dark"
+  );
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
-    document.documentElement.classList.toggle("dark");
-  };
+  useEffect(() => {
+    if (darkMode) {
+      document.documentElement.classList.add("dark");
+      localStorage.setItem("theme", "dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+      localStorage.setItem("theme", "light");
+    }
+  }, [darkMode]);
 
   return (
-    <nav className="bg-white dark:bg-gray-900 shadow-md py-3 px-6 md:px-12 flex justify-between items-center relative">
+    <nav className="fixed top-0 left-0 w-full bg-white dark:bg-gray-900 shadow-md py-3 px-6 md:px-12 flex justify-between items-center z-50">
       {/* Logo */}
-      <div className="flex w-18 items-center">
-        <img src={TIS} className=" rounded-lg" alt="Logo" />
+      <div className="flex items-center">
+        <img src={TIS} className="w-12 h-12 rounded-lg" alt="Logo" />
       </div>
 
       {/* Search Bar (Hidden on Small Screens) */}
@@ -32,7 +39,7 @@ const Navbar = () => {
           placeholder="Search..."
           className="bg-transparent outline-none px-2 py-1 w-48 text-gray-700 dark:text-white"
         />
-        <button className="bg-[#514EEC] text-white px-4 py-1 rounded-lg hover:bg-[#3d3acc] transition">
+        <button className="bg-gray-800  text-white px-4 py-1 rounded-lg hover:bg-[#514EEC] transition">
           Search
         </button>
       </div>
@@ -48,7 +55,7 @@ const Navbar = () => {
           <FaLinkedin size={22} />
         </a>
         <a
-          href="https://github.com"
+          href="https://github.com/tawhid3482"
           target="_blank"
           rel="noopener noreferrer"
           className="text-gray-700 dark:text-white hover:text-gray-600 transition"
@@ -56,8 +63,8 @@ const Navbar = () => {
           <FaGithub size={22} />
         </a>
         <button
-          onClick={toggleDarkMode}
-          className="p-2 rounded-full bg-gray-200 dark:bg-gray-200 hover:bg-gray-300 dark:hover:bg-gray-600 transition"
+          onClick={() => setDarkMode(!darkMode)}
+          className="p-2 rounded-full bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 transition"
         >
           {darkMode ? <FaSun size={20} /> : <FaRegMoon size={20} />}
         </button>
@@ -91,7 +98,7 @@ const Navbar = () => {
             <FaLinkedin size={24} />
           </a>
           <a
-            href="https://github.com"
+            href="https://github.com/tawhid3482"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-700 dark:text-white hover:text-gray-600 transition"
@@ -99,8 +106,8 @@ const Navbar = () => {
             <FaGithub size={24} />
           </a>
           <button
-            onClick={toggleDarkMode}
-            className="p-2 rounded-full bg-gray-200 dark:bg-gray-200 hover:bg-gray-300 dark:hover:bg-gray-600 transition"
+            onClick={() => setDarkMode(!darkMode)}
+            className="p-2 rounded-full bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 transition"
           >
             {darkMode ? <FaSun size={24} /> : <FaRegMoon size={24} />}
           </button>

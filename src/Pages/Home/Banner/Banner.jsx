@@ -1,47 +1,49 @@
 import { FaReact } from "react-icons/fa";
 import { SiTailwindcss } from "react-icons/si";
 import { FaHtml5 } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Banner = () => {
   return (
-    <div className=" relative bg-gradient-to-br from-blue-50 to-blue-100 dark:from-gray-800 dark:to-gray-900 py-16 px-6 md:px-12 lg:px-20">
-      <div className="flex flex-col lg:flex-row justify-between items-center gap-10">
+    <div className="relative bg-gray-100 py-16 px-6 md:px-12 2xl:py-32 h-screen flex items-center md:mt-8">
+      <div className="flex flex-col lg:flex-row justify-between items-center gap-10 w-full">
         {/* Left Section */}
         <div className="lg:w-1/2 text-center lg:text-left">
-          <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 dark:text-white leading-tight">
-            Personal UI, crafted with <br /> <span className="text-blue-600 dark:text-blue-400">Tailwind CSS</span>
+          <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight">
+            Build Stunning UI with <br />
+            <span className="text-gray-700">Tailwind CSS</span>
           </h1>
 
           {/* Compatibility Icons */}
-          <div className="flex flex-wrap justify-center lg:justify-start items-center gap-4 mt-6 text-gray-700 dark:text-gray-300 uppercase text-sm">
+          <div className="flex flex-wrap justify-center lg:justify-start items-center gap-4 mt-6 text-gray-600 uppercase text-sm">
             <p className="font-medium">Compatible with:</p>
-            <div className="flex items-center gap-2 bg-white dark:bg-gray-700 px-3 py-2 rounded-lg shadow-md">
+            <div className="flex items-center gap-2 bg-white shadow-md border border-gray-300 px-3 py-2 rounded-lg">
               <FaHtml5 className="text-orange-500 text-xl" />
               <span>HTML</span>
             </div>
-            <div className="flex items-center gap-2 bg-white dark:bg-gray-700 px-3 py-2 rounded-lg shadow-md">
+            <div className="flex items-center gap-2 bg-white shadow-md border border-gray-300 px-3 py-2 rounded-lg">
               <FaReact className="text-blue-500 text-xl" />
               <span>React</span>
             </div>
-            <div className="flex items-center gap-2 bg-white dark:bg-gray-700 px-3 py-2 rounded-lg shadow-md">
+            <div className="flex items-center gap-2 bg-white shadow-md border border-gray-300 px-3 py-2 rounded-lg">
               <SiTailwindcss className="text-cyan-500 text-xl" />
               <span>Tailwind</span>
             </div>
           </div>
 
           {/* Description */}
-          <p className="mt-6 text-gray-600 dark:text-gray-400 leading-relaxed">
-            Personal Component Library created by Tawhidul Islam Saikat – A customizable and lightweight UI 
-            component library built with React and Tailwind CSS, designed to enhance web development efficiency.
-            This library offers a collection of reusable, responsive, and accessible components that seamlessly
-            integrate with Tailwind, making UI development faster and more consistent.
+          <p className="mt-6 text-gray-600 leading-relaxed">
+            A modern and customizable UI component library crafted with React and Tailwind CSS. 
+            Enhance web development with a seamless, lightweight, and efficient design system.
           </p>
 
           {/* Button */}
           <div className="mt-8">
-            <button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-xl shadow-md transition-all duration-300">
-              Get Started
-            </button>
+            <Link to={'/docs'}>
+              <button className="bg-gray-800 hover:bg-[#514EEC] text-white font-semibold px-6 py-3 rounded-xl shadow-md transition-all duration-300 transform hover:scale-105">
+                Get Started
+              </button>
+            </Link>
           </div>
         </div>
 
