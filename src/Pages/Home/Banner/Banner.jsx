@@ -5,18 +5,18 @@ import { Link } from "react-router-dom";
 
 const Banner = () => {
   return (
-    <div className="relative bg-gray-100 py-16 px-6 md:px-12 2xl:py-32 h-screen flex items-center md:mt-8">
-      <div className="flex flex-col lg:flex-row justify-between items-center gap-10 w-full">
+    <div className="dark:bg-gray-900  relative bg-gray-100 py-16 px-6 md:px-12 2xl:py-32 h-screen flex items-center mt-8">
+      <div className="flex flex-col lg:flex-row justify-between items-center gap-10 w-full dark:text-white">
         {/* Left Section */}
-        <div className="lg:w-1/2 text-center lg:text-left">
-          <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight">
+        <div className="lg:w-1/2 text-center lg:text-left dark:text-white">
+          <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight dark:text-white">
             Build Stunning UI with <br />
-            <span className="text-gray-700">Tailwind CSS</span>
+            <span className="text-gray-700 dark:text-[#F96F40]">Tailwind CSS</span>
           </h1>
 
           {/* Compatibility Icons */}
           <div className="flex flex-wrap justify-center lg:justify-start items-center gap-4 mt-6 text-gray-600 uppercase text-sm">
-            <p className="font-medium">Compatible with:</p>
+            <p className="font-medium dark:text-white">Compatible with:</p>
             <div className="flex items-center gap-2 bg-white shadow-md border border-gray-300 px-3 py-2 rounded-lg">
               <FaHtml5 className="text-orange-500 text-xl" />
               <span>HTML</span>
@@ -32,7 +32,7 @@ const Banner = () => {
           </div>
 
           {/* Description */}
-          <p className="mt-6 text-gray-600 leading-relaxed">
+          <p className="mt-6 text-gray-600 leading-relaxed dark:text-white">
             A modern and customizable UI component library crafted with React and Tailwind CSS. 
             Enhance web development with a seamless, lightweight, and efficient design system.
           </p>
@@ -40,7 +40,7 @@ const Banner = () => {
           {/* Button */}
           <div className="mt-8">
             <Link to={'/docs'}>
-              <button className="bg-gray-800 hover:bg-[#514EEC] text-white font-semibold px-6 py-3 rounded-xl shadow-md transition-all duration-300 transform hover:scale-105">
+              <button className="bg-gray-800 hover:bg-[#F96F40] text-white font-semibold px-6 py-3 rounded-xl shadow-md transition-all duration-300 transform hover:scale-105">
                 Get Started
               </button>
             </Link>
