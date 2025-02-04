@@ -1,18 +1,18 @@
-import React from 'react';
-import ButtonsPage from './ButtonsPage';
-import ButtonDesign from './ButtonDesign';
-import AnimationButton from './AnimationButton';
-import Abutton2 from './Abutton2';
+import React from "react";
+import AnimationButton from "./AnimationButton";
+import NormalButton from "./NormalButton";
+import GradientBtn from "./GradientBtn";
+import OutlineBtn from "./OutlineBtn";
 
 const Button = () => {
-    return (
-        <div>
-            <ButtonsPage></ButtonsPage>
-            <ButtonDesign></ButtonDesign>
-            <AnimationButton></AnimationButton>
-            <Abutton2></Abutton2>
-        </div>
-    );
+  return (
+    <div>
+      <NormalButton></NormalButton>
+      <GradientBtn></GradientBtn>
+      <AnimationButton></AnimationButton>
+      <OutlineBtn></OutlineBtn>
+    </div>
+  );
 };
 
 export default Button;

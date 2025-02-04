@@ -12,7 +12,7 @@ const buttonHTML = `
 </button>
 `;
 
-const ButtonDesign = () => {
+const GradientBtn = () => {
   return (
     <div className="p-8 space-y-6">
       <ComponentPreview
@@ -29,4 +29,4 @@ const ButtonDesign = () => {
   );
 };
 
-export default ButtonDesign;
+export default GradientBtn;
