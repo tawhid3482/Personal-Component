@@ -78,7 +78,7 @@ const LayoutDocs = () => {
         </button>
 
         {/* Main Content */}
-        <main className="flex-1 p-6 md:ml-2 bg-gray-300 text-gray-800 min-h-screen">
+        <main className="flex-1 p-6 md:ml-2 bg-gray-300 text-gray-800 min-h-screen md:max-w-5xl 2xl:max-w-[1650px]">
           <Outlet />
         </main>
       </div>
