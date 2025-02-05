@@ -3,6 +3,7 @@ import MainLayout from "../Layout/Mainlayout";
 import Home from "../Pages/Home/Home";
 import ErrorPage from "../Shared/ErrorPage";
 import Button from "../Pages/Custom/Button/Button";
+import Card from "../Pages/Custom/Card/Card";
 
 
 const routesConfig = [
@@ -18,6 +19,10 @@ const routesConfig = [
       {
         path: "button",
         element: <Button />,
+      },
+      {
+        path: "card",
+        element: <Card />,
       },
     ],
   },
