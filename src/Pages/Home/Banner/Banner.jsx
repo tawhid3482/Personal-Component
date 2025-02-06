@@ -50,7 +50,7 @@ const Banner = () => {
         {/* Right Section (Image) */}
         <div className="w-full lg:w-1/2 flex justify-center">
           <img
-            src="https://play-lh.googleusercontent.com/7oW_TFaC5yllHJK8nhxHLQRCvGDE8jYIAc2SWljYpR6hQlFTkbA6lNvER1ZK-doQnQ"
+            src="https://photoshulk.com/wp-content/uploads/cute-anime-dp-for-instagram-girl-1.jpg"
             alt="Component Library"
             className="max-w-md w-full rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300"
           />

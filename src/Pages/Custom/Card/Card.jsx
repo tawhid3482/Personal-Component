@@ -1,3 +1,4 @@
+import BgCard from "./Bg-Card";
 import HoverCard from "./HoverCard";
 import NormalCard from "./NormalCard";
 
@@ -6,6 +7,7 @@ const Card = () => {
     <div>
       <NormalCard></NormalCard>
       <HoverCard></HoverCard>
+      <BgCard></BgCard>
     </div>
   );
 };
