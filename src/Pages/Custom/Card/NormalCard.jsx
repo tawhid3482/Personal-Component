@@ -106,7 +106,7 @@ const NormalCard = () => {
         title="Normal Card"
         component={
           <div className="md:flex gap-8 items-center">
-            <div className="md:w-80 rounded-2xl overflow-hidden shadow-lg bg-white">
+            <div className="md:w-80  rounded-2xl overflow-hidden shadow-lg bg-white">
               <img
                 className="w-full h-48 object-cover transition-transform duration-300 ease-in-out transform hover:scale-110 "
                 src="https://static.vecteezy.com/system/resources/thumbnails/039/545/117/small/ai-generated-beautiful-rose-flowers-with-butterflies-flying-on-them-video.jpg"
@@ -125,7 +125,7 @@ const NormalCard = () => {
                 </button>
               </div>
             </div>
-
+            {/* doctor */}
             <div className="bg-white shadow-lg rounded-lg overflow-hidden w-80 border border-gray-200">
               {/* Image Section */}
               <img
