@@ -3,6 +3,7 @@ import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { atomDark } from "react-syntax-highlighter/dist/esm/styles/prism";
 import { FaRegCopy, FaCheck } from "react-icons/fa";
 
+// eslint-disable-next-line react/prop-types
 const ComponentPreview = ({ title, component, code, htmlCode }) => {
   const [activeTab, setActiveTab] = useState("preview");
   const [copied, setCopied] = useState(false);

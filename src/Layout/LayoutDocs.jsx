@@ -5,7 +5,7 @@ import Navbar from "../Pages/Navbar/Navbar";
 
 export const routes = [
   { path: "navbar", label: "Navbar" },
-  { path: "banner", label: "Banner" },
+  { path: "banners", label: "Banners" },
   { path: "button", label: "Button" },
   { path: "card", label: "Card" },
   { path: "modal", label: "Modal" },
