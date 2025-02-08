@@ -96,7 +96,7 @@ const NormalBanner = () => {
   return (
     <div className="p-8 space-y-6">
       <ComponentPreview
-        title="Animation Button"
+        title="Normal Banner"
         component={
           <div className="flex gap-5 items-center">
             <div className="bg-gray-900 text-white rounded-lg flex items-center justify-center ">
