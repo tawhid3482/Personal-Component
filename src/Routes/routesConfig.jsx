@@ -5,6 +5,7 @@ import ErrorPage from "../Shared/ErrorPage";
 import Button from "../Pages/Custom/Button/Button";
 import Card from "../Pages/Custom/Card/Card";
 import Banners from "../Pages/Custom/Banner/Banners";
+import Navbar from "../Pages/Custom/Navbar/Navbar";
 
 
 const routesConfig = [
@@ -17,6 +18,10 @@ const routesConfig = [
     path: "/docs",
     element: <LayoutDocs />,
     children: [
+      {
+        path: "navbar",
+        element: <Navbar />,
+      },
       {
         path: "banners",
         element: <Banners />,
