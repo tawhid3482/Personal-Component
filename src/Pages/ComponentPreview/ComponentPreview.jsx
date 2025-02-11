@@ -37,7 +37,7 @@ const ComponentPreview = ({ title, component, code, htmlCode }) => {
       {/* Display Content */}
       <div className="relative">
         {activeTab === "preview" && (
-          <div className="p-4 border rounded-lg bg-gray-50 flex justify-center">{component}</div>
+          <div className="p-4 border rounded-lg bg-gray-50 flex justify-center ">{component}</div>
         )}
         
         {activeTab !== "preview" && (
