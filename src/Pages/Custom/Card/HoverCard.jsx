@@ -84,7 +84,6 @@ taj mahel
                   </div>
                 </div>
               </div>
-
 `;
 
 const HoverCard

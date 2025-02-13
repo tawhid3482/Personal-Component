@@ -7,7 +7,7 @@ import {
   FaRegStar,
 } from "react-icons/fa";
 
-const buttonHTML = `
+const CardHTML = `
 <div class="max-w-sm rounded-2xl overflow-hidden shadow-lg bg-white">
   <img
     class="w-full h-48 object-cover transition-transform duration-300 ease-in-out transform hover:scale-110"
@@ -19,14 +19,14 @@ const buttonHTML = `
     <p class="text-gray-600 mt-2">
       This is a simple card with a beautiful design using Tailwind CSS.
     </p>
-    <button class="mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition">
+    <Card class="mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition">
       Learn More
     </button>
   </div>
 </div>
 `;
 
-const buttonJSX = `
+const CardJSX = `
 <div className="max-w-sm rounded-2xl overflow-hidden shadow-lg bg-white">
   <img
     className="w-full h-48 object-cover transition-transform duration-300 ease-in-out transform hover:scale-110 "
@@ -178,8 +178,8 @@ const NormalCard = () => {
             </div>
           </div>
         }
-        code={buttonJSX}
-        htmlCode={buttonHTML}
+        code={CardJSX}
+        htmlCode={CardHTML}
       />
     </div>
   );
